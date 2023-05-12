@@ -12,7 +12,7 @@
   padding-top: 25px;
   width: 20vw;
   border: 1px solid black;
-  min-height: 100vh;
+  height: 205vh;
   background-color: blue;
   position: fixed;
   
@@ -20,13 +20,15 @@
   
 }
 .right-content{
-  text-align: center;
-  margin-right: 10x;
-  padding-top: 20px;
+  
+  
+  
+  margin-top: 15vh;
+  padding-top: 25px;
   position: absolute;
-  height: 100vh;
-  margin-left: 20vw;
-  width: 80vw;
+  height: 90vh;
+  margin-left: 25vw;
+  width: 75vw;
     
 }
 .font-style{
@@ -48,16 +50,42 @@
 .collapse-item{
   color: bisque;
 }
-.topic-bar{
-  margin-left: 8px;
-  margin-top: 5px;
-  position: fixed;
-  height: 20vh;
-  
-  
+
+.top-bar{
+  margin-left: 25vw;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  position: absolute;
+  width: 75vw;
 }
-input{
-  width: 20vw;
-  padding-top: 5x;
+.col-12{
+  margin-left: 25vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
 }
+.bg-light{
+  margin-top: 2px;
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.btn-primary{
+  height: 7vh;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+}
+.col-3{
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-head{
+  display: flex;
+  flex-direction: row;
+  gap: 50vw;
+}
+
 
