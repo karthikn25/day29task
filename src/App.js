@@ -9,6 +9,7 @@ import Colors from './Component/Colors';
 import Borders from './Component/Borders';
 import Other from './Component/Other';
 import StudentList from './Component/StudentList';
+import TeacherList from './Component/TeacherList';
 
 
 
@@ -43,6 +44,10 @@ function App() {
       <Route path="/StudentList">
         <StudentList/>
         </Route>
+        <Route path="/TeacherList">
+        <TeacherList/>
+        </Route>
+        
         
        </Switch>
 

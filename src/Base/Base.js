@@ -5,6 +5,7 @@ import "../css/fontawesome-free/css/all.css";
 import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser  }  from "@fortawesome/free-solid-svg-icons";
+import { faUserGraduate } from "@fortawesome/free-solid-svg-icons"
 
 
 
@@ -78,6 +79,11 @@ function Base({children}){
                     <span onClick={()=>history.push("/StudentList")} >Student list</span>
                     
         </a>
+        <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <FontAwesomeIcon icon={faUserGraduate} />
+        <span onClick={()=>history.push("/TeacherList")} >Teacher list</span>
+        
+</a>
         
        
         </div>
