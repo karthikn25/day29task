@@ -8,6 +8,8 @@ import Animations from './Component/Animations';
 import Colors from './Component/Colors';
 import Borders from './Component/Borders';
 import Other from './Component/Other';
+import StudentList from './Component/StudentList';
+
 
 
 
@@ -38,7 +40,10 @@ function App() {
       <Route path="/Other">
         <Other/>
       </Route>
-
+      <Route path="/StudentList">
+        <StudentList/>
+        </Route>
+        
        </Switch>
 
 

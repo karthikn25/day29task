@@ -87,5 +87,33 @@
   flex-direction: row;
   gap: 50vw;
 }
+.stud-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  border: 1px solid black;
+  width: 200px;
+  height: 250px;
+  margin: 12px;
+  padding-left: 20px;
+  padding: 15px;
+
+
+}
+.card-container{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+}
+.control{
+  padding-left: 20px;
+  padding-bottom:2px;
+}
+.stud-bar{
+  display: flex;
+  flex-direction: row;
+  gap: 55vw;
+}
 
 

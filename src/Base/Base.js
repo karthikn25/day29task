@@ -1,10 +1,15 @@
-import React from "react";
+import React  from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import '../css/sb-admin-2.css';
 import "../css/fontawesome-free/css/all.css";
 import { useHistory } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleUser  }  from "@fortawesome/free-solid-svg-icons";
 
 
+
+
+ 
 
 
 function Base({children}){
@@ -45,7 +50,7 @@ function Base({children}){
                         <h6 className="collapse-header">Custom Components:</h6>
                         <ul>
                         <li><a className="collapse-item"  onClick={()=>history.push("/buttons")}
-                         >Buttons</a></li> <br/>
+                         >Buttons</a></li> 
                        <li> <a className="collapse-item"  onClick={()=>history.push("/cards")}
                          >Cards</a> </li> 
                         </ul>
@@ -58,17 +63,21 @@ function Base({children}){
                     <div className="bg py-2 collapse-inner rounded">
                         <h6 className="collapse-header">Custom Utilities:</h6>
                         <ul>
-                      <li>  <a className="collapse-item"  onClick={()=>history.push("/Colors")}
-                         >Colors</a></li>  <br/>
-                      <li>  <a className="collapse-item"  onClick={()=>history.push("/Borders")}
-                         >Borders</a></li>  <br/>
-                       <li> <a className="collapse-item"  onClick={()=>history.push("/Animations")}
-                         >Animations</a></li>  <br/>
-                       <li> <a className="collapse-item"  onClick={()=>history.push("/Other")}
-                         >Other</a> </li> 
+                    <li> <a className="collapse-item"  onClick={()=>history.push("/Colors")}
+                         >Colors</a></li> 
+                     <li> <a className="collapse-item"  onClick={()=>history.push("/Borders")}
+                         >Borders</a></li>
+                    <li><a className="collapse-item"  onClick={()=>history.push("/Animations")}
+                         >Animations</a></li>   
+                     <li><a className="collapse-item"  onClick={()=>history.push("/Other")}
+                         >Other</a> </li>   
                         </ul>
                     </div>            
-                   
+                    <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <FontAwesomeIcon icon={faCircleUser} />
+                    <span onClick={()=>history.push("/StudentList")} >Student list</span>
+                    
+        </a>
         
        
         </div>
