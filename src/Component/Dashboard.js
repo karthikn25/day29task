@@ -1,6 +1,6 @@
 import React from "react";
 import Base from "../Base/Base";
-import Card from "./Card";
+
 
 
 function Dashboard(){

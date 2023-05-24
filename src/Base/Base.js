@@ -40,40 +40,7 @@ function Base({children}){
              onClick={()=>history.push("/")}
              >Dashboard</span>
         </a>
-        <hr className="sidebar-divider my-0"></hr>
-        <div className="sidebar-heading"> Interface</div>
-        <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i className="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
-        </a>
         
-                    <div className="bg py-2 collapse-inner rounded">
-                        <h6 className="collapse-header">Custom Components:</h6>
-                        <ul>
-                        <li><a className="collapse-item"  onClick={()=>history.push("/buttons")}
-                         >Buttons</a></li> 
-                       <li> <a className="collapse-item"  onClick={()=>history.push("/cards")}
-                         >Cards</a> </li> 
-                        </ul>
-                    </div>
-                    <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span>
-        </a>
-        
-                    <div className="bg py-2 collapse-inner rounded">
-                        <h6 className="collapse-header">Custom Utilities:</h6>
-                        <ul>
-                    <li> <a className="collapse-item"  onClick={()=>history.push("/Colors")}
-                         >Colors</a></li> 
-                     <li> <a className="collapse-item"  onClick={()=>history.push("/Borders")}
-                         >Borders</a></li>
-                    <li><a className="collapse-item"  onClick={()=>history.push("/Animations")}
-                         >Animations</a></li>   
-                     <li><a className="collapse-item"  onClick={()=>history.push("/Other")}
-                         >Other</a> </li>   
-                        </ul>
-                    </div>            
                     <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <FontAwesomeIcon icon={faCircleUser} />
                     <span onClick={()=>history.push("/StudentList")} >Student list</span>
